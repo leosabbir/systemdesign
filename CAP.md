@@ -8,8 +8,10 @@
 
 ## Misconception & Theorem
 > CAP is frequently misunderstood as if one has to choose to **abandon one of the three guarantees** at all times.
-In fact, the choice is really between **Consistency** and **Availability** ONLY when a **Network Partition** or **Failure** happens.
-At **All** other times, **No Trade Off** has to be made - that is, in the absence of network failure, when the distributed system is running normally – both availability and consistency can be satisfied.
+
+> In fact, the choice is really between **Consistency** and **Availability** ONLY when a **Network Partition** or **Failure** happens.
+
+> At **All** other times, **No Trade Off** has to be made - that is, in the absence of network failure, when the distributed system is running normally – both availability and consistency can be satisfied.
 
 ## Implication
 No distributed system is safe from network failures, thus network partitioning generally has to be tolerated. In the presence of a partition, one is then left with one of the two options: Consistency or Availability.
@@ -23,5 +25,5 @@ In summary, when a network partition or failure happens, we have to decide eithe
 
 
 ## Examples:
-RDBMS designed with tranditional ACID guarantees choose consistency over availability.
-Systems designed around BASE philosopy, common in the NoSQL movement chhose availability over consistency.
+- RDBMS designed with tranditional ACID guarantees choose consistency over availability.
+- Systems designed around BASE philosopy, common in the NoSQL movement chhose availability over consistency.
