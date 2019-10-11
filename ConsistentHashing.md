@@ -2,6 +2,7 @@
 - It is a way of distributing requests among a changing population of web servers. Each slot is then represented by a node in a distributed system.
 - **Fault Tolerance** : Consistent hashing has also been used to reduce the impact of **partial system failures** in large web applications as to allow for robust caches without incurring the system wide fallout of a failure. When a server is down, request are silently redirected to working server
 - **Load Balancing** : having virtual servers helps to distribute the load in balance way.
+- It also handles the prevention of sending duplicate request to multiple servers (Gaurav Sen [youtube video](https://youtu.be/oUJbuFMyBDk?t=369)
 - Consistent hashing concept also applies to the design of **DHTs**.
 
 # DHTs with Consistent Hashing
